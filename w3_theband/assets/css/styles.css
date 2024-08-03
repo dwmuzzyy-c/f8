@@ -133,9 +133,40 @@ html {
     font-size: 15px;
 
 }
-#content {
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px;
+}
+
+#content .content-section .content-heading,
+#content .content-section .content-subheading {
+    text-align: center;
+}
+#content .content-section .content-heading {
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+#content .content-section .content-subheading {
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
 
 }
+
+#content .content-section .about-text {
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+
 
 #footer {
 

@@ -28,40 +28,111 @@ html {
 }
 
 #header {
-    height: 46px;
+    height: 46.5px;
     background-color: #000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 1;
 
 }
 
 #nav {
+    display: inline-block;
+}
 
+#header .search-btn {
+    float: right;
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 24px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
 }
 
 #nav li {
     display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav  li  a {
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .more-subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+} 
+
+#nav li:hover .more-subnav {
+    display: block;
+}
+
+.i-arrow-down {
+    font-size: 12px;
 }
 
 #nav .more-subnav {
     display: none;
+    position: absolute;
+    top: 100%; /* Get parent width*/
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 160px;
 }
 
-#nav li a {
-    color: #fff;
-    text-decoration: none;
-    line-height: 46.5px;
-    padding: 0 24px;
-    display: inline-block;
+#nav .more-subnav li {
+    display: block;
 }
 
-#nav li:hover a {
+#nav .more-subnav a {
     color: #000;
-    background-color: #ccc;
+    line-height: 38px;
+    padding: 0 16px;
 }
 
-#slicer {
-
+#slider {
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%; /*50% of its own width*/
+    background: url("/assets/img/slider1.jpg") top center /cover no-repeat
 }
 
+#slider .img-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%) /*-50% means moving the element left by half of its own width*/
+}
+
+.img-content .img-title {
+    margin: 10px 0;
+    font-weight: 400px;
+    font-size: 24px;
+}
+
+.img-content .img-subtitle {
+    margin: 15px 0;
+    font-weight: bolder;
+    font-size: 15px;
+
+}
 #content {
 
 }

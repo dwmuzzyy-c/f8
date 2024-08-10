@@ -117,7 +117,7 @@ html {
     position: relative;
     margin-top: 46.5px;
     padding-top: 50%; /*50% of its own width*/
-    background: url("/assets/img/slider1.jpg") top center /cover no-repeat
+    background: url("/w3_theband/assets/img/slider1.jpg") top center /cover no-repeat
 }
 
 #slider .img-content {
@@ -225,8 +225,161 @@ html {
     border-radius: 60%;
     padding: 2px 8px;
 }
+/* TOUR PLACE */
 
+.places-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 32px;
+}
+
+.place-item {
+    float: left;
+    width: 33.333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-info {
+    background-color: #fff;
+    padding: 15px 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4; /*  */
+}
+
+.place-buy-btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+}
 
 #footer {
 
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+
+.modal-dialog {
+    background-color: #fff;
+    width: 60%;
+    line-height: 1.5;
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-header-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.modal-header-close:hover {
+    opacity: 0.9;
+    background-color: #ccc;
+    color: #000;
+}
+
+
+.modal-title {
+    background-color: #009688;
+    padding: 32px 16px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.modal-body {
+    padding: 0 16px;
+}
+
+.modal-label {
+    margin-top: 15px;
+    display:block;
+}
+
+.modal-input {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+}
+
+.modal-pay-btn {
+    background-color: #009688;
+    text-align: center;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.modal-footer {
+    margin-top: 16px;
+}
+
+.modal-close {
+    display: inline-block;
+    background-color: #f44336;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+}
+
+.modal-pay-btn:hover,
+.modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.ti-close {
+    font-size: 10px;
+}
+
+.modal-help {
+    float: right;
+    padding: 10px 0;
 }
